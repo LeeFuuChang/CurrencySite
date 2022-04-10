@@ -1,0 +1,14 @@
+AUD:澳洲
+CAD:加拿大
+CHF:瑞士
+CNY:中國
+EUR:歐元區
+GBP:英國
+HKD:香港
+JPY:日本
+NZD:紐西蘭
+SEK:瑞典
+SGD:新加坡
+THB:泰國
+ZAR:南非
+USD:美國

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <i class="fab fa-bandcamp"></i>
+        </div>
+        <div id="content-type1-nav-button" class="item item-active" alt="content-type1">
+          <img src="assets/images/nav/grid.svg" />
+        </div>
+        <div id="content-type2-nav-button" class="item" alt="content-type2">
+          <img src="assets/images/nav/pie-chart.svg" alt="" />
+        </div>
+        <div id="content-type3-nav-button" class="item" alt="content-type3">
+          <img src="assets/images/nav/bar-chart.svg" alt="" />
+        </div>
+        <div id="content-type4-nav-button" class="item" alt="content-type4">
+          <img src="assets/images/nav/list-ul.svg" alt="" />
+        </div>
+        <div id="content-type5-nav-button" class="item" alt="content-type5">
+          <img src="assets/images/nav/gear.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main id="content" class="content-type1">
+      <div id="content-type1" class="content-type">
+        <div id="content-type1-header" class="content-type1-header">
+          <div
+            id="content-type1-header-description"
+            class="content-type1-header-description"
+          >
+            <h1
+              id="content-type1-header-description-title"
+              class="content-type1-header-description-title"
+            >
+              歡迎您的到來<span
+                id="content-type1-header-description-title-username"
+                class="content-type1-header-description-title-username"
+                ></span
+              >!
+            </h1>
+            <p
+              id="content-type1-header-description-subtitle"
+              class="content-type1-header-description-subtitle"
+            >
+              讓我們助您取得最佳收益吧!
+            </p>
+          </div>
+        </div>
+        <div id="content-type1-history" class="content-type1-block">
+          <div id="content-type1-history-header">
+            <div id="content-type1-history-header-description">
+              <h2 id="content-type1-history-header-description-title">近期走勢</h2>
+              <div id="content-type1-history-header-description-option">
+                <span id="6mon" class="content-type1-history-header-description-option-item active">
+                  <li class="content-type1-history-header-description-option-item-bullet"></li>
+                  6個月
+                </span>
+                <span id="3mon" class="content-type1-history-header-description-option-item">
+                  <li class="content-type1-history-header-description-option-item-bullet"></li>
+                  3個月
+                </span>
+                <span id="1day" class="content-type1-history-header-description-option-item">
+                  <li class="content-type1-history-header-description-option-item-bullet"></li>
+                  1整日
+                </span>
+              </div>
+            </div>
+            <select id="content-type1-history-header-currency" name="content-type1-history-header-currency">
+              <option value="AUD">AUD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CNY">CNY</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="HKD">HKD</option>
+              <option value="JPY">JPY</option>
+              <option value="NZD">NZD</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="USD">USD</option>
+              <option value="ZAR">ZAR</option>
+            </select>
+          </div>
+          <div id="content-type1-history-chart">
+            <canvas id="content-type1-history-chart-canvas"></canvas>
+          </div>
+        </div>
+        <div id="content-type1-table" class="content-type1-block">
+          <table style="width:100%;height:min-content;"  align="center">
+            <thead>
+              <tr>
+                <th class="content-type1-table-idx">#</th>
+                <th class="content-type1-table-head">貨幣</th>
+                <th class="content-type1-table-head">匯率</th>
+                <th class="content-type1-table-head">近6個月</th>
+                <th class="content-type1-table-head">近3個月</th>
+                <th class="content-type1-table-head">近1整日</th>
+              </tr>
+            </thead>
+            <tbody id="content-type1-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="content-type2" class="content-type">
+        
+        <div id="content-type2-header" class="content-type2-header">
+          <div
+            id="content-type2-header-description"
+            class="content-type2-header-description"
+          >
+            <h1
+              id="content-type2-header-description-title"
+              class="content-type2-header-description-title"
+            >各銀行匯率比較
+            </h1>
+          </div>
+        </div>
+        <div id="content-type2-BS" class="content-type2-block">
+          <div id="content-type2-BS-header">
+            <div id="content-type2-BS-header-description">
+              <h2 id="content-type2-BS-header-description-title">銀行賣出</h2>
+            </div>
+          </div>
+          <div id="content-type2-BS-chart">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+          </div>
+        </div>
+        <div id="content-type2-BB" class="content-type2-block">
+          <div id="content-type2-BB-header">
+            <div id="content-type2-BB-header-description">
+              <h2 id="content-type2-BB-header-description-title">銀行買入</h2>
+            </div>
+          </div>
+          <div id="content-type2-BB-chart">
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div id="content-type3" class="content-type">
+        <div id="content-type3-header" class="content-type3-header">
+          <div
+            id="content-type3-header-description"
+            class="content-type3-header-description"
+          >
+            <h1
+              id="content-type3-header-description-title"
+              class="content-type3-header-description-title"
+            >各銀行匯率比較
+            </h1>
+            <div id="content-type3-currency">
+              <span id="content-type3-currency-description">當前顯示貨幣: </span>
+              <select id="content-type3-currency-celect">
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="content-type3-BS" class="content-type3-block">
+          <div id="content-type3-BS-header">
+            <div id="content-type3-BS-header-description">
+              <h2 id="content-type3-BS-header-description-title">銀行賣出</h2>
+            </div>
+          </div>
+          <div id="content-type3-BS-chart">
+            <canvas id="content-type3-BS-chart-canvas"></canvas>
+          </div>
+        </div>
+        <div id="content-type3-BB" class="content-type3-block">
+          <div id="content-type3-BB-header">
+            <div id="content-type3-BB-header-description">
+              <h2 id="content-type3-BB-header-description-title">銀行買入</h2>
+            </div>
+          </div>
+          <div id="content-type3-BB-chart">
+            <canvas id="content-type3-BB-chart-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div id="content-type4" class="content-type">
+        <h1>Hello World4</h1>
+      </div>
+
+      <div id="content-type5" class="content-type">
+        <h1>Hello World5</h1>
+      </div>
+    </main>
+    <footer id="footer">
+      <div id="footer-inner">
+        <div id="user" class="login">
+          <button id="user-login">
+            <img id="user-login-icon" src="assets/images/footer/person-circle.svg" alt="">
+            <span id="user-login-text">登入</span>
+          </button>
+          <a class="info" href="#">
+            <img id="user-info-icon" src="https://picsum.photos/200" />
+            <span id="user-info-username"></span>
+          </a>
+          <a class="notification notify" href="#">
+            <img src="assets/images/footer/bell.svg" alt="" />
+          </a>
+        </div>
+        <div id="footer-calculator">
+          <h1 id="footer-calculator-title">計算收益</h1>
+          <form id="footer-calculator-form" action="">
+            <input
+              type="text"
+              name="currency"
+              id="footer-calculator-form-currency"
+              class="footer-calculator-form-input"
+              list="footer-calculator-form-currencies"
+              placeholder="選擇貨幣"
+            />
+            <datalist id="footer-calculator-form-currencies"></datalist>
+
+            <input
+              type="text"
+              name="price"
+              id="footer-calculator-form-price"
+              class="footer-calculator-form-input"
+              placeholder="輸入金額"
+            />
+
+            <div class="footer-calculator-form-row">
+              <button
+                type="button"
+                id="footer-calculator-form-buy"
+                class="footer-calculator-form-button"
+              >
+                台幣買入
+              </button>
+              <button
+                type="button"
+                id="footer-calculator-form-sell"
+                class="footer-calculator-form-button"
+              >
+                外幣賣出
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="footer-currency">
+          <select id="footer-currency-select" name="bank"></select>
+          <table id="footer-currency-table" align="center">
+            <thead id="footer-currency-table-head">
+              <tr class="footer-currency-table-head-row">
+                <th id="EURtitle" class="currency">貨幣</th>
+                <th class="buy">買入</th>
+                <th class="sell">賣出</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </footer>
+    <div id="askloginframe">
+      <div id="askloginbackground">
+        <div id="logincard" class="login">
+          <img id="logincard-close" src="assets/images/login/x.svg" alt="">
+
+          <div id="logincard-login-banner">登入</div>
+          <form id="logincard-login-form">
+            <label for="logincard-form-account" class="logincard-form-input-label" required>信箱</label>
+            <input id="logincard-form-account" class="logincard-form-input" type="text" placeholder="example@gmail.com"></input>
+            <label for="logincard-form-password" class="logincard-form-input-label" required>密碼</label>
+            <input id="logincard-form-password" class="logincard-form-input" type="text" placeholder="password"></input>
+            <input id="logincard-form-login-submit" class="logincard-form-button" type="button" value="送出"></input>
+          </form>
+
+          <div id="logincard-signup-banner">註冊</div>
+          <form id="logincard-signup-form">
+            <label for="logincard-form-username" class="logincard-form-input-label" required>用戶名稱</label>
+            <input id="logincard-form-username" class="logincard-form-input" type="text" placeholder="account"></input>
+            <label for="logincard-form-account" class="logincard-form-input-label" required>信箱</label>
+            <input id="logincard-form-account" class="logincard-form-input" type="text" placeholder="example@gmail.com"></input>
+            <label for="logincard-form-password" class="logincard-form-input-label" required>密碼</label>
+            <input id="logincard-form-password" class="logincard-form-input" type="text" placeholder="password"></input>
+            <label for="logincard-form-cpassword" class="logincard-form-input-label" required>確認密碼</label>
+            <input id="logincard-form-cpassword" class="logincard-form-input" type="text" placeholder="password"></input>
+            <input id="logincard-form-signup-submit" class="logincard-form-button" type="button" value="送出"></input>
+          </form>
+
+          <div id="logincard-footer">
+            <a id="logincard-footer-forget">忘記密碼</a>
+            <a id="logincard-footer-login-switch">註冊帳號</a>
+            <a id="logincard-footer-signup-switch">登入帳號</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/7dd397c9c6.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="assets/js/login.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/contents/content_type1.js"></script>
+  <script src="assets/js/contents/content_type2.js"></script>
+  <script src="assets/js/contents/content_type3.js"></script>
+  <script src="assets/js/contents/content_type4.js"></script>
+  <script src="assets/js/contents/content_type5.js"></script>
+  <script>
+  var xValues = ['USD', 'CNY', 'EUR', 'JPY', 'GBP', 'CAD', 'AUD', 'CHF', 'SEK', 'THB', 'HKD', 'SGD', 'ZAR', 'NZD'];
+  var yValues = [20937, 14723, 13011, 4975, 2708, 1644, 1331, 752, 541, 502, 347, 340, 302, 211];
+  var barColors = [
+    "#FF0D39",
+    "#E80CA2",
+    "#E400FE",
+    "#960CE8",
+    "#630DFF",
+    "#0D87FF",
+    "#0CB5E8",
+    "#00FFF7",
+    "#0CE8A2",
+    "#0DFF6E",
+    "#64FF0D",
+    "#A8E80C",
+    "#FFF901",
+    "#E8CE0C",
+    "#FFCA0D",
+  ];
+  
+  new Chart("myChart", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        borderColor: "#ffffff6d",
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "World Wide Wine Production 2018"
+      },
+      legend: {
+        display: true,
+        position: "bottom",
+        labels: {
+            fontColor: "#ffffff"
+        }
+      }
+    }
+  });
+  </script>
+</html>
