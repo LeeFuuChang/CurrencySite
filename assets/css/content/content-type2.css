@@ -1,0 +1,120 @@
+#content.content-type2 #content-type2 {
+    position: relative;
+}
+#content.content-type2 #content-type2 #content-type2-header #content-type2-header-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: min-content;
+}
+#content.content-type2 #content-type2 #content-type2-header #content-type2-header-description #content-type2-header-description-title{
+    margin: 12px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+#content.content-type2 #content-type2 #content-type2-header #content-type2-header-description #content-type2-currency {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    width: min-content;
+    height: min-content;
+}
+#content.content-type2 #content-type2 #content-type2-header #content-type2-header-description #content-type2-currency #content-type2-currency-description {
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+    width: max-content;
+    color: #8a8a8a;
+}
+#content.content-type2 #content-type2 #content-type2-header #content-type2-header-description #content-type2-currency #content-type2-currency-celect {
+    border: 2px solid #3a3a3c;
+    border-radius: 6px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    color: #ffffff;
+    background: #202022;
+}
+
+
+
+
+
+#content.content-type2 #content-type2 .content-type2-block {
+    position: relative;
+    border-radius: 15px;
+    margin: 30px 0;
+    padding: 30px;
+    width: 100%;
+    height: calc(100%*0.425);
+    min-height: calc(100%*0.4);
+    max-height: calc(100%*0.45);
+    background: #202022;
+}
+
+
+
+
+
+#content.content-type2 #content-type2 #content-type2-BS #content-type2-BS-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: min-content;
+}
+#content.content-type2 #content-type2 #content-type2-BS #content-type2-BS-header #content-type2-BS-header-description {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#content.content-type2 #content-type2 #content-type2-BS #content-type2-BS-chart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+#content.content-type2 #content-type2 #content-type2-BS #content-type2-BS-chart #content-type2-BS-chart-canvas {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+#content.content-type2 #content-type2 #content-type2-BB #content-type2-BB-chart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+#content.content-type2 #content-type2 #content-type2-BB #content-type2-BB-chart #content-type2-BB-chart-canvas {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+

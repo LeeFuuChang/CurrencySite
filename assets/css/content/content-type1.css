@@ -1,0 +1,148 @@
+#content.content-type1 #content-type1 {
+    position: relative;
+}
+#content.content-type1 #content-type1 #content-type1-header #content-type1-header-description #content-type1-header-description-title{
+    margin: 6px 0;
+    padding: 6px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+#content.content-type1 #content-type1 #content-type1-header #content-type1-header-description #content-type1-header-description-subtitle{
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+
+
+
+
+#content.content-type1 #content-type1 .content-type1-block {
+    position: relative;
+    border-radius: 15px;
+    margin: 28px 0;
+    padding: 30px;
+    width: 100%;
+    height: calc(100%*0.39);
+    min-height: calc(100%*0.3478);
+    max-height: calc(100%*0.413);
+    background: #202022;
+}
+
+
+
+
+
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: min-content;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description {
+    position: relative;
+    width: min-content;
+    height: min-content;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description #content-type1-history-header-description-option {
+    display: flex;
+    margin: 7px 0;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description #content-type1-history-header-description-option span {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+    left: 10px;
+    width: 30px;
+    height: min-content;
+    font-size: 12px;
+    transition: 0.2s;
+    color: #737373;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description #content-type1-history-header-description-option span li {
+    position: absolute;
+    top: -6px;
+    left: -10px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description #content-type1-history-header-description-option span:hover li {
+    color: #33d49d;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description #content-type1-history-header-description-option span.active{
+    color: #ffffff;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-description #content-type1-history-header-description-option span.active li {
+    color: #33d49d;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-header #content-type1-history-header-currency {
+    border: 2px solid #3a3a3c;
+    border-radius: 6px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    color: #ffffff;
+    background: #202022;
+}
+#content.content-type1 #content-type1 #content-type1-history #content-type1-history-chart {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+
+
+#content.content-type1 #content-type1 #content-type1-table {
+    height: min-content;
+}
+#content.content-type1 #content-type1 #content-type1-table .content-type1-table-idx {
+    padding: 7px 14px;
+    color: #535354;
+}
+#content.content-type1 #content-type1 #content-type1-table .content-type1-table-head {
+    padding-bottom: 14px;
+    width: calc(100% / 5);
+    font-size: 14px;
+}
+#content.content-type1 #content-type1 #content-type1-table .content-type1-table-item {
+    position: relative;
+    padding: 7px 0;
+    width: calc(100% / 5);
+    font-size: 14px;
+}
+#content.content-type1 #content-type1 #content-type1-table thead tr th {
+    padding-top: 7px !important;
+    padding-bottom: 14px !important;
+    color: #ffffff !important;
+}
+#content.content-type1 #content-type1 #content-type1-table .content-type1-table-item #green-arrow-up {
+    position: relative;
+    bottom: calc(100% - 6px);
+    right: 4px;
+    border-bottom: 8px solid #58bc7c;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    width: 0;
+    height: 0;
+}
+#content.content-type1 #content-type1 #content-type1-table .content-type1-table-item #red-arrow-down {
+    position: relative;
+    top: calc(100% - 6px);
+    right: 4px;
+    border-top: 8px solid #e95757;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+
+
+
